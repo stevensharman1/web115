@@ -1,4 +1,4 @@
-/* ====== General Reset & Base Styles ====== */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +8,14 @@
 body {
   font-family: Verdana, Geneva, sans-serif;
   line-height: 1.6;
-  background-color: #e8f0f7;  /* light blue-gray */
-  color: #2c3e50;             /* dark slate */
+  background-color: #e8f0f7;  
+  color: #2c3e50;            
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* ====== Header ====== */
+
 header {
   background: #2c3e50;
   color: #fff;
@@ -28,7 +28,7 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-/* ====== Navigation ====== */
+
 header nav, footer nav {
   margin-top: 0.5rem;
 }
@@ -46,7 +46,7 @@ footer nav a:hover {
   text-decoration: underline;
 }
 
-/* ====== Main Content ====== */
+
 main {
   flex: 1;
   padding: 2rem;
@@ -64,7 +64,7 @@ main p {
   margin-bottom: 1rem;
 }
 
-/* ====== Footer ====== */
+
 footer {
   background: #2c3e50;
   color: #fff;
