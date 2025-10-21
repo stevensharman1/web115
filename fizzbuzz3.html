@@ -3,23 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Steven Sharman || Speedy Snail ✦ WEB115 ✦ FizzBuzz 3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="header"></div>
+  <header id="header" role="banner" class="site-header">
+    <!-- Simple login form (keeps parity with earlier assignments) -->
+    <form id="login-form" class="login-form" action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Log in</legend>
+
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="Speedy" aria-describedby="username-help">
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="••••••">
+
+        <div id="username-help" class="sr-only">If you don't enter a username, "Speedy" will be used as the default.</div>
+
+        <button type="submit">Sign in</button>
+      </fieldset>
+    </form>
+  </header>
 
   <main>
     <h2>FizzBuzz 3 - Flexible + Bang!</h2>
-    <h3>Welcome to Speedy Snail’s FizzBuzz!</h3>
+
+    <!-- Use default word "Speedy" in the intro -->
+    <h3 id="welcome">Welcome to Speedy’s FizzBuzz!</h3>
+
     <p>
-      This version counts to 140 and handles multiples of 3 (Fizz), 5 (Buzz), and 7 (Bang).
+      This version counts to 140 and handles multiples of 3 (<strong>Fizz</strong>), 5 (<strong>Buzz</strong>), and 7 (<strong>Bang</strong>).
+      The page will use the default word <strong>"Speedy"</strong> if you haven't signed in.
     </p>
 
-    <ul id="fizzbuzz-list"></ul>
+    <!-- changed <ul> to <ol> so each item is numbered -->
+    <ol id="fizzbuzz-list" aria-live="polite"></ol>
   </main>
 
-  <div id="footer"></div>
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <small>Steven Sharman — Speedy Snail</small>
+  </footer>
 
+  <!-- load fizzbuzz script (the version below is compatible with an <ol>) -->
   <script src="fizzbuzz3.js"></script>
   <script src="components/include.js"></script>
 </body>
