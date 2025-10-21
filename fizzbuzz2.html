@@ -6,7 +6,26 @@
   <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-  <div id="header"></div>
+  <!-- Header with login form -->
+  <header id="header" role="banner" class="site-header">
+    <form id="login-form" class="login-form" action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Log in</legend>
+
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="Speedy" aria-describedby="username-help">
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="••••••">
+
+        <div id="username-help" class="sr-only">
+          If you don't enter a username, "Speedy" will be used as the default.
+        </div>
+
+        <button type="submit">Sign in</button>
+      </fieldset>
+    </form>
+  </header>
 
   <main>
     <h2>FizzBuzz 2 - Flexible Divisors</h2>
@@ -16,11 +35,12 @@
     <ul id="fizzbuzz-list"></ul>
   </main>
 
-  <div id="footer"></div>
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <small>Steven Sharman — Speedy Snail</small>
+  </footer>
 
   <script src="script.js"></script>
   <script src="fizzbuzz2.js"></script> 
   <script src="components/include.js"></script>
-  
 </body>
 </html>
