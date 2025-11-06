@@ -13,6 +13,14 @@ function checkDivision(dividend, divisor) {
 document.addEventListener("DOMContentLoaded", () => {
     const list = document.getElementById("fizzbuzz-list");
 
+      const firstName = document.getElementById("first_name").value;
+    const middleInitial = document.getElementById("middle_initial").value;
+    const lastName = document.getElementById("last_name").value;
+
+    // 2. Create Greeting
+    const greetingText = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}! Here's your FizzBuzz:`;
+    outputDiv.innerHTML = `<h4>${greetingText}</h4>`;
+
     // --- Divisor and Word Variables for Flexibility ---
     const firstDivisor = 3;   // The number to check for the first word
     const secondDivisor = 5;  // The number to check for the second word
