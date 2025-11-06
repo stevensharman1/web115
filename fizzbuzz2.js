@@ -12,8 +12,10 @@ function checkDivision(dividend, divisor) {
 
 document.addEventListener("DOMContentLoaded", () => {
     const list = document.getElementById("fizzbuzz-list");
-
-      const firstName = document.getElementById("first_name").value;
+    const nameForm = document.getElementById("nameForm");
+  const outputDiv = document.getElementById("output");
+     
+    const firstName = document.getElementById("first_name").value;
     const middleInitial = document.getElementById("middle_initial").value;
     const lastName = document.getElementById("last_name").value;
 
