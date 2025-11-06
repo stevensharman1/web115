@@ -1,6 +1,13 @@
 document.getElementById("fizzbuzzForm").addEventListener("submit", function(event) {
   event.preventDefault();
+  
+  const firstName = document.getElementById("first_name").value;
+    const middleInitial = document.getElementById("middle_initial").value;
+    const lastName = document.getElementById("last_name").value;
 
+    // 2. Create Greeting
+    const greetingText = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}! Here's your FizzBuzz:`;
+    outputDiv.innerHTML = `<h4>${greetingText}</h4>`;
   // Get user info
   const firstName = document.getElementById("first_name").value.trim();
   const middleInitial = document.getElementById("middle_initial").value.trim();
