@@ -1,4 +1,11 @@
 // Flexible FizzBuzz — handles 3 (Fizz), 5 (Buzz), 7 (Bang), and can easily expand.
+  const firstName = document.getElementById("first_name").value;
+    const middleInitial = document.getElementById("middle_initial").value;
+    const lastName = document.getElementById("last_name").value;
+
+    // 2. Create Greeting
+    const greetingText = `Hello, ${firstName} ${middleInitial ? middleInitial + '.' : ''} ${lastName}! Here's your FizzBuzz:`;
+    outputDiv.innerHTML = `<h4>${greetingText}</h4>`;
 
 const fizzBuzzMap = {
   3: "Fizz",
